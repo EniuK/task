@@ -1,0 +1,25 @@
+.wrapper {
+    margin-bottom: 50px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.main {
+    font-weight: 700;
+    font-size: 85px;
+    line-height: 85px;
+    letter-spacing: -2%;
+    color: #3D4F5C;
+}
+
+.secondParagraph {
+    color: #FB8958;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1%;
+    margin: 30px auto;
+}

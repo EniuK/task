@@ -1,8 +1,18 @@
+import { Box } from "@mui/material";
+import "./header.css";
+import CustomButton from "./Button";
 const Header = () => {
   return (
-    <div>
-      <div>Hello</div>
-    </div>
+    <Box className={"wrapper"}>
+      <Box>
+        <img src="./logo.svg" alt="Logo" />
+      </Box>
+      <Box style={{ display: "flex", flexDirection: "row" }}>
+        <Box className={"link"}>Startups</Box>
+        <Box className={"link"}>Contact</Box>
+        <CustomButton text={"Work with us!"} filling={false} />{" "}
+      </Box>
+    </Box>
   );
 };
 

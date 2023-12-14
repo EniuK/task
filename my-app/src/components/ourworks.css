@@ -1,0 +1,24 @@
+.our-works-container {
+    /* Dowolne style dla kontenera */
+  }
+  
+  .section-title {
+    /* Dowolne style dla tytułu sekcji */
+  }
+  
+  .works-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .work-item {
+    width: 100%; /* Domyślnie jeden element w jednym wierszu */
+    padding: 10px;
+    box-sizing: border-box;
+  }
+  
+  @media (min-width: 600px) {
+    .work-item {
+      width: 50%; /* Dwa elementy w jednym wierszu */
+    }
+  }

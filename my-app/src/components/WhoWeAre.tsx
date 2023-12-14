@@ -1,8 +1,28 @@
+import { Box, Typography } from "@mui/material";
+import CustomButton from "./Button";
+
+import "./whoweare.css";
 const WhoWeAre = () => {
   return (
-    <div>
-      <div>WhoWeAre</div>
-    </div>
+    <Box className={"wrapper"}>
+      <Box>
+        <Box className={"main"}>
+          We Create <br />
+          Startups.
+        </Box>
+        <Box className={"secondParagraph"}>
+          <Typography>
+            We are startup studio that develops and launches new companies.
+          </Typography>
+        </Box>
+        <Box>
+          <CustomButton text={"See our works"} filling={true} />
+        </Box>
+      </Box>
+      <Box style={{ width: "50%" }}>
+        <img src="./headerimage.png" alt="Header_Image" />
+      </Box>
+    </Box>
   );
 };
 

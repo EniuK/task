@@ -1,10 +1,9 @@
 import { Box } from "@mui/material";
-import React from "react";
-import "./App.css";
 import Main from "./components/Main";
+import "./app.css";
 function App() {
   return (
-    <Box>
+    <Box style={{ maxWidth: "1400px" }} className={"app"}>
       <Main />
     </Box>
   );

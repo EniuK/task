@@ -1,0 +1,48 @@
+.header {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 85px;
+    letter-spacing: -2%;
+    color: #3D4F5C;
+}
+
+.secondHeader {
+    color: #FB8958;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1%;
+    margin: 30px auto;
+}
+
+.wrapper{ 
+    display: flex;
+    flex-direction: column;
+    background-color: #FBFAFA;
+    width: 100%;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.mapWrapper {
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+}
+
+.num{
+    color: #FB8958;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    letter-spacing: -1%;
+    margin-bottom: 20px;
+}
+
+.caption { 
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -1%;
+    color: #3D4F5C;
+}
