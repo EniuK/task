@@ -8,11 +8,7 @@ interface WorkItem {
   color: string;
 }
 
-interface OurWorksProps {
-  works: WorkItem[];
-}
-
-const OurWorks: React.FC<OurWorksProps> = () => {
+const OurWorks: React.FC = () => {
   const sampleWorks: WorkItem[] = [
     {
       maintext: "Tolq",
@@ -41,18 +37,20 @@ const OurWorks: React.FC<OurWorksProps> = () => {
   ];
 
   return (
-    <Box>
-      <Box>OurWorks</Box>
-      {sampleWorks.map((work, index) => (
-        <Box key={index}>
-          <Box>{work.maintext}</Box>
-          <Box>{work.text}</Box>
-          <Box>
-            <img src={work.img} alt={`Work ${index}`} />
+    <Box className="our-works-container">
+      <Box className="section-title">OurWorks</Box>
+      <Box className="works-wrapper">
+        {sampleWorks.map((work, index) => (
+          <Box key={index} className="work-item">
+            <Box className="maintext">{work.maintext}</Box>
+            <Box className="donwText">{work.text}</Box>
+            <Box className="image-container">
+              <img className="image" src={work.img} alt={`Work ${index}`} />
+            </Box>
+            <Button className="action-button">Click me</Button>
           </Box>
-          <Button>Click me</Button>
-        </Box>
-      ))}
+        ))}
+      </Box>
     </Box>
   );
 };

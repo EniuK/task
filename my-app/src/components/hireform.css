@@ -1,0 +1,26 @@
+.form-wrapper {
+    background-color: #FFC351;
+    width: 100%;
+}
+
+.contact-form{ 
+    width: 50%
+}
+
+.form-header-text{
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 55px;
+    letter-spacing: -2%;
+    font-family: Circular Std;
+}
+
+.form-header-subtext {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: -1%;
+    color: #FFFFFF;
+}
