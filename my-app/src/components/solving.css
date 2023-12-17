@@ -1,4 +1,4 @@
-.problems-wrapper {
+.solving-problems-wrapper {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -7,11 +7,13 @@
   width: 100%;
 }
 
-.text {
+.solving-text {
     color: #FB8958;
     font-weight: 700;
     font-size: 40px;
     line-height: 50px;
     letter-spacing: -1%;
     margin: 30px ;
+    width: 65%;
+    text-align: center;
 }

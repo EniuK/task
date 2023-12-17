@@ -1,11 +1,9 @@
 .we-are-wrapper {
-    margin-bottom: 50px;
     margin-top: 30px;
     display: flex;
     flex-direction: row;
-    margin-left: -50px;
-    padding-left: 50px;
-    width: 100%;
+
+  padding-left: 100px;
     justify-content: space-between;
 }
 

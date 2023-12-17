@@ -8,12 +8,22 @@ const Careers = () => {
         <img src="./hiringLeft.png" alt="human_with_hat_image" />
       </Box>
       <Box className={"text-wrapper"}>
-        <Box>We are hiring!</Box>
-        <Box>
-          We're always looking for talented people to join and help build our
-          startups. Check out our current openings
+        <Box className={"hiring-header-text"}>We are hiring!</Box>
+        <Box className={"hiring-second-text"}>
+          <b>
+            {" "}
+            We're always looking for talented people <br /> to join and help
+            build our startups. <br /> Check out our current openings
+          </b>
         </Box>
-        <Box>
+        <Box
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            alignItems: "center",
+            marginTop: "20px",
+          }}
+        >
           <CustomButton text="See current openings " filling={true} />
         </Box>
       </Box>

@@ -11,7 +11,7 @@ import SolvingProblems from "./SolvingPorblems";
 
 const Main = () => {
   return (
-    <Box style={{ width: "100%" }}>
+    <Box style={{ maxWidth: "1440px" }}>
       <Header />
       <WhoWeAre />
       <WeLove />

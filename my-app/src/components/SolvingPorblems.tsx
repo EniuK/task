@@ -2,7 +2,12 @@ import { Box } from "@mui/material";
 import "./solvingproblems.css";
 const SolvingProblems = () => {
   return (
-    <Box className={"wrapperCore"}>
+    <Box className={"problems-wrapper"}>
+      <Box
+        style={{ position: "absolute", right: "100px", marginBottom: "50px" }}
+      >
+        <img src="./personalAssistan.png" alt="help" />
+      </Box>
       <Box>
         <img
           src="./Thumb.png"

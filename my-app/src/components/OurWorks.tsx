@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Button } from "@mui/material";
 import "./ourworks.css";
+import CustomButton from "./Button";
+import Solving from "./Solving";
 interface WorkItem {
   maintext: string;
   text: string;
@@ -38,18 +40,25 @@ const OurWorks: React.FC = () => {
 
   return (
     <Box className="our-works-container">
-      <Box className="section-title">OurWorks</Box>
+      <Box className="section-title">Our works</Box>
       <Box className="works-wrapper">
         {sampleWorks.map((work, index) => (
           <Box key={index} className="work-item">
-            <Box className="maintext">{work.maintext}</Box>
-            <Box className="donwText">{work.text}</Box>
+            <Box className="maintext" style={{ color: `${work.color}` }}>
+              {work.maintext}
+            </Box>
+            <Box className="down-text">{work.text}</Box>
             <Box className="image-container">
               <img className="image" src={work.img} alt={`Work ${index}`} />
             </Box>
-            <Button className="action-button">Click me</Button>
+            <Box style={{ marginTop: "20px" }}>
+              <CustomButton text="More" filling={false} />
+            </Box>
           </Box>
         ))}
+      </Box>
+      <Box>
+        <Solving />
       </Box>
     </Box>
   );

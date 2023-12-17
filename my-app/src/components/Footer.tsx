@@ -13,6 +13,8 @@ const Footer: React.FC = () => {
         p: 2,
         justifyContent: "center",
         alignItems: "center",
+        marginTop: "60px",
+        marginBottom: "60px",
       }}
     >
       <Box
@@ -43,18 +45,35 @@ const Footer: React.FC = () => {
             flexDirection: { xs: "row", md: "column" },
             justifyContent: { xs: "center", md: "flex-start" },
             alignItems: { xs: "center", md: "flex-start" },
+            marginTop: "10px",
           }}
         >
-          <Link href="#" className="links-companies">
+          <Link
+            href="#"
+            className="links-companies"
+            style={{ textDecoration: "none", marginTop: "10px" }}
+          >
             Tolq
           </Link>
-          <Link href="#" className="links-companies">
+          <Link
+            href="#"
+            className="links-companies"
+            style={{ textDecoration: "none", marginTop: "10px" }}
+          >
             LegalSite
           </Link>
-          <Link href="#" className="links-companies">
+          <Link
+            href="#"
+            className="links-companies"
+            style={{ textDecoration: "none", marginTop: "10px" }}
+          >
             Codekeeper
           </Link>
-          <Link href="#" className="links-companies">
+          <Link
+            href="#"
+            className="links-companies"
+            style={{ textDecoration: "none", marginTop: "10px" }}
+          >
             Feedback Labs
           </Link>
         </Box>
@@ -63,19 +82,20 @@ const Footer: React.FC = () => {
         sx={{
           width: { xs: "100%", md: "auto" },
           margin: "auto",
-          textAlign: "center",
+          textAlign: { xs: "center", md: "left" },
         }}
       >
-        <Typography variant="h6">Nagłówek sekcji</Typography>
+        <Typography variant="h6">Contact</Typography>
         <Box>
-          <Typography variant="body1">Napis sekcji</Typography>
+          <Box>
+            World Trade Center - The Hague Prinses Margrietplantsoen 33 2595 AM
+            The Hague The Netherlands
+          </Box>
         </Box>
         <Box>
-          <Typography variant="body2">Informacje kontaktowe</Typography>
-          <Typography variant="body2">Adres</Typography>
-          <Typography variant="body2">Numer telefonu</Typography>
-          <Typography variant="body2">Email</Typography>
-          <Link href="#">Dodatkowy link</Link>
+          <Link href="#" style={{ textDecoration: "none" }}>
+            Send us an email
+          </Link>
         </Box>
       </Box>
 
@@ -86,11 +106,17 @@ const Footer: React.FC = () => {
           textAlign: "center",
         }}
       >
-        <Typography variant="h5">Napis na górze</Typography>
-        <Box>
-          <img src="img1.png" alt="Image1" />
-          <img src="img2.png" alt="Image2" />
-          <img src="img3.png" alt="Image3" />
+        <Typography variant="h5">Follow us</Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: { xs: "center", md: "flex-start" },
+          }}
+        >
+          <img src="twitter.svg" alt="Image1" className={"icon"} />
+          <img src="linkedin.svg" alt="Image2" className={"icon"} />
+          <img src="instagram.svg" alt="Image3" className={"icon"} />
         </Box>
       </Box>
     </Box>

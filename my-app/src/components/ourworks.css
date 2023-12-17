@@ -1,12 +1,21 @@
 .our-works-container {
     background-color: #ffffff;
-    border-radius: 30px;
-    box-shadow: 0px 8px 35px 0px #bba98e26;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
     padding: 20px; 
+    padding-top: 50px;
   }
   
   .section-title {
-   
+   font-family: "Circular Std";
+   font-weight: 700;
+   font-size: 50px;
+   line-height: 50px;
+   letter-spacing: -1%;
+   margin: 50px 0
   }
   
   .works-wrapper {
@@ -19,13 +28,38 @@
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     background-color: #ffffff;
     border-radius: 30px;
     box-shadow: 0px 8px 35px 0px #bba98e26;
+    padding-bottom: 50px;
   }
   
   @media (min-width: 600px) {
     .work-item {
       width: calc(50% - 20px); 
     }
+  }
+
+  .maintext {
+    font-family: "Circular Std";
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 30px;
+    letter-spacing: -1%;
+    text-align: center;
+  }
+
+  .down-text {
+    font-family: "Circular Std";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -1%;
+    text-align: center;
+   width: 55%;
+   margin-top: 30px;
   }

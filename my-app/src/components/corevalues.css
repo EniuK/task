@@ -1,4 +1,41 @@
-.mapWrapper {
+.core-values-wrapper {
     background-color: #FBFAFA;
     width: 100%;
+    padding-left: 100px;
+   padding-top: 100px;
+   padding-bottom: 100px;
+}
+
+.core-title {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -2%;
+    font-style: "Circular Std";
+}
+
+.core-map-wrapper {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px;
+}
+
+.core-map-item0 {
+    margin-top: 50px;
+    width: 40%;
+    margin-right: 50px;
+}
+
+.core-map-item1 {
+    margin-top: 50px;
+    width: 20%;
+
+}
+
+.caption {
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 38px;
+    letter-spacing: -1%;
+    font-family: "Circular Std";
 }

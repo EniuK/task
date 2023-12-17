@@ -24,21 +24,19 @@ const WeLove: React.FC = () => {
   ];
 
   return (
-    <Box className={"wrapper"}>
+    <Box className={"we-love-wrapper"}>
       <Box>
-        <Typography variant="h4" className={"header"}>
-          Who we are
-        </Typography>
-        <Typography variant="body1" className={"secondHeader"}>
+        <Box className={"we-are-header"}>Who we are</Box>
+        <Box className={"second-header"}>
           We create products that have innovation and technology at their core.
           <br /> We value working with talented people that understand the
           possibilities of today.
-        </Typography>
+        </Box>
       </Box>
-      <Box className={"mapWrapper"}>
+      <Box className={"map-wrapper"}>
         {weAre.map((item: WeLoveItem) => (
-          <Box key={item.num} className={"weAreItem"}>
-            <Typography
+          <Box key={item.num} className={"we-are-item"}>
+            <Box
               className="num"
               sx={{
                 position: "relative",
@@ -56,10 +54,13 @@ const WeLove: React.FC = () => {
               }}
             >
               {item.num}
-            </Typography>
-            <Typography className="caption">{item.text}</Typography>
+            </Box>
+            <Box className="caption">{item.text}</Box>
           </Box>
         ))}
+      </Box>
+      <Box style={{ position: "absolute", right: "100px" }}>
+        <img src="./questionmark.svg" alt="questionmark" />
       </Box>
     </Box>
   );

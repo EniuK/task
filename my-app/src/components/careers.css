@@ -3,8 +3,34 @@
     justify-content: space-between;
     flex-direction: row;
     align-items: center;
-    width: 100%;
+    max-width: 1440px;
+    padding-bottom: 100px;
+    padding-right: 50px;
 }
 
-.image-wrapper{
+.text-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.hiring-header-text {
+    font-family: "Circular Std";
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 50px;
+    letter-spacing: -2%;
+    text-align: Center;
+}
+
+.hiring-second-text {
+    font-family: "Circular Std";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: -1%;
+    text-align: Center;
+    color:#FB8958;
+    padding: 20px 0;
 }

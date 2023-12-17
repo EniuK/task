@@ -1,13 +1,32 @@
-.header-wrapper{ 
+.header-wrapper {
     margin-top: 20px;
     display: flex;
     justify-content: space-between;
     width: 100%;
+    overflow: hidden;
     align-items: center;
-   margin-bottom: 70px;
-}
-
-.link {
+    margin-bottom: 70px;
+   
+  }
+  
+  .link {
     margin-top: 10px;
     margin-right: 20px;
-}
+  }
+  
+  @media (max-width: 600px) {
+    .header-wrapper {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .link {
+      margin-top: 10px;
+      margin-right: 0;
+    }
+  
+    .header-wrapper img {
+      margin-bottom: 10px;
+    }
+  }
+  

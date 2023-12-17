@@ -1,4 +1,4 @@
-.header {
+.we-are-header {
     font-weight: 700;
     font-size: 50px;
     line-height: 85px;
@@ -6,7 +6,7 @@
     color: #3D4F5C;
 }
 
-.secondHeader {
+.second-header {
     color: #FB8958;
     font-weight: 400;
     font-size: 24px;
@@ -15,19 +15,23 @@
     margin: 30px auto;
 }
 
-.wrapper{ 
+.we-love-wrapper{ 
     display: flex;
     flex-direction: column;
     background-color: #FBFAFA;
     width: 100%;
     justify-content: flex-start;
     align-items: flex-start;
+    padding-left: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
 }
 
-.mapWrapper {
+.map-wrapper {
     display: flex;
     flex-direction: row;
-    margin: 0 20px;
+ margin-top: 50px;
+    width: 100%;
 }
 
 .num{
@@ -45,4 +49,10 @@
     line-height: 38px;
     letter-spacing: -1%;
     color: #3D4F5C;
+}
+
+.we-are-item {
+    width: 25%;
+    margin-right: 50px;
+
 }
