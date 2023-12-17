@@ -3,7 +3,7 @@ import "./header.css";
 import CustomButton from "./Button";
 const Header = () => {
   return (
-    <Box className={"wrapper"}>
+    <Box className={"header-wrapper"}>
       <Box>
         <img src="./logo.svg" alt="Logo" />
       </Box>

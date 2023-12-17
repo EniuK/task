@@ -4,7 +4,7 @@ import CustomButton from "./Button";
 import "./whoweare.css";
 const WhoWeAre = () => {
   return (
-    <Box className={"wrapper"}>
+    <Box className={"we-are-wrapper"}>
       <Box>
         <Box className={"main"}>
           We Create <br />
@@ -19,7 +19,7 @@ const WhoWeAre = () => {
           <CustomButton text={"See our works"} filling={true} />
         </Box>
       </Box>
-      <Box style={{ width: "50%" }}>
+      <Box style={{ width: "50%", overflow: "hidden" }}>
         <img src="./headerimage.png" alt="Header_Image" />
       </Box>
     </Box>

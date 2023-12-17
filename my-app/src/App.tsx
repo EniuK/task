@@ -3,7 +3,7 @@ import Main from "./components/Main";
 import "./app.css";
 function App() {
   return (
-    <Box style={{ maxWidth: "1400px" }} className={"app"}>
+    <Box className={"app"}>
       <Main />
     </Box>
   );
