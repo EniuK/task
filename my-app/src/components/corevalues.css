@@ -39,3 +39,45 @@
     letter-spacing: -1%;
     font-family: "Circular Std";
 }
+
+
+@media (max-width: 600px) {
+    .core-values-wrapper {
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ padding: 0;
+    }
+    .core-title {
+        font-size: 25px;
+        line-height: 25px;
+
+    }
+
+    .core-map-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+        margin: 0;
+        margin-top: 50px;
+        margin-left: 30px;
+        width: 50%;
+    }
+    .core-map-item0 {
+        margin-top: 50px;
+        width: 50%;
+        font-size: 25px;
+    }
+    
+    .core-map-item1 {
+        margin-top: 50px;
+        width: 50%;
+        font-size: 25px;
+    padding-bottom: 40px;
+    }
+    }
+    

@@ -7,7 +7,7 @@
   width: 100%;
 }
 
-.text {
+.text-solving {
     color: #FB8958;
     font-weight: 700;
     font-size: 40px;
@@ -15,3 +15,14 @@
     letter-spacing: -1%;
     margin: 30px ;
 }
+
+@media (max-width: 600px) {
+  .text-solving{
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: -1%;
+    margin: 10px ;
+  }
+    }
+    

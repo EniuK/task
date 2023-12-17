@@ -36,8 +36,8 @@ const WhoWeAre = () => {
           margin: { xs: "0", md: "0" },
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-end",
-          justifyContent: "flex-end",
+          alignItems: { md: "flex-end", xs: "center" },
+          justifyContent: { md: "flex-end", xs: "center" },
           height: "100%",
         }}
       >
@@ -45,7 +45,7 @@ const WhoWeAre = () => {
           src="./headerimage.png"
           alt="Header_Image"
           style={{
-            width: "100%",
+            width: isSmallScreen ? "40%" : "100%",
             height: isSmallScreen ? "auto" : "100%",
             objectFit: "cover",
             objectPosition: "right bottom",

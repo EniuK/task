@@ -25,7 +25,7 @@ const WeLove: React.FC = () => {
 
   return (
     <Box className={"we-love-wrapper"}>
-      <Box>
+      <Box className={"text-wrapper-we-love"}>
         <Box className={"we-are-header"}>Who we are</Box>
         <Box className={"second-header"}>
           We create products that have innovation and technology at their core.
