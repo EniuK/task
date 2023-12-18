@@ -8,7 +8,7 @@ const SolvingProblems = () => {
     <Box className={"problems-wrapper"}>
       {isSmallScreen && (
         <Box
-          style={{ position: "absolute", right: "100px", marginBottom: "50px" }}
+          style={{ position: "absolute", right: "5%", marginBottom: "50px" }}
         >
           <img src="./personalAssistan.png" alt="help" />
         </Box>

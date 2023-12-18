@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, Typography } from "@mui/material";
+import { Box, Typography, useMediaQuery } from "@mui/material";
 import "./welove.css";
 
 type WeLoveItem = {
@@ -8,6 +8,8 @@ type WeLoveItem = {
 };
 
 const WeLove: React.FC = () => {
+  const isTablet = useMediaQuery("(min-width: 900px)");
+
   const weAre: WeLoveItem[] = [
     {
       num: "01",
@@ -59,9 +61,11 @@ const WeLove: React.FC = () => {
           </Box>
         ))}
       </Box>
-      <Box style={{ position: "absolute", right: "100px" }}>
-        <img src="./questionmark.svg" alt="questionmark" />
-      </Box>
+      {isTablet && (
+        <Box style={{ position: "absolute", right: "15%" }}>
+          <img src="./questionmark.svg" alt="questionmark" />
+        </Box>
+      )}
     </Box>
   );
 };
