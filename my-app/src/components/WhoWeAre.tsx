@@ -45,8 +45,8 @@ const WhoWeAre = () => {
           src="./public/headerimage.png"
           alt="Header_Image"
           style={{
-            width: isSmallScreen ? "40%" : "100%",
-            height: isSmallScreen ? "auto" : "100%",
+            width: isSmallScreen ? "100%" : "100%",
+            height: isSmallScreen ? "100%" : "100%",
             objectFit: "cover",
             objectPosition: "right bottom",
           }}
