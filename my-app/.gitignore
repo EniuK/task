@@ -4,7 +4,11 @@
 /node_modules
 /.pnp
 .pnp.js
-
+  ".git",
+  ".runtimeconfig.json",
+  "firebase-debug.log",
+  "firebase-debug.*.log",
+  "node_modules"
 # testing
 /coverage
 
