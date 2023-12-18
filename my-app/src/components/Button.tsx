@@ -4,6 +4,12 @@ interface CustomButtonProps {
   filling: boolean;
 }
 const CustomButton: React.FC<CustomButtonProps> = ({ text, filling }) => {
+  const redirectToAnotherPage = () => {
+    window.open(
+      "https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley",
+      "_blank"
+    );
+  };
   return (
     <Box>
       <Button
@@ -15,6 +21,7 @@ const CustomButton: React.FC<CustomButtonProps> = ({ text, filling }) => {
           paddingRight: " 24px",
           paddingLeft: " 24px",
         }}
+        onClick={redirectToAnotherPage}
       >
         <b>{text}</b>
       </Button>
