@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/task/static/css/main.0fa6aeea.css",
-    "main.js": "/task/static/js/main.9b7b4aa9.js",
-    "static/js/787.d4aba7ab.chunk.js": "/task/static/js/787.d4aba7ab.chunk.js",
-    "index.html": "/task/index.html",
-    "main.0fa6aeea.css.map": "/task/static/css/main.0fa6aeea.css.map",
-    "main.9b7b4aa9.js.map": "/task/static/js/main.9b7b4aa9.js.map",
-    "787.d4aba7ab.chunk.js.map": "/task/static/js/787.d4aba7ab.chunk.js.map"
+    "main.css": "/EniuK/task/tree/main/my-app/public/static/css/main.0fa6aeea.css",
+    "main.js": "/EniuK/task/tree/main/my-app/public/static/js/main.c51987e5.js",
+    "static/js/787.d4aba7ab.chunk.js": "/EniuK/task/tree/main/my-app/public/static/js/787.d4aba7ab.chunk.js",
+    "index.html": "/EniuK/task/tree/main/my-app/public/index.html",
+    "main.0fa6aeea.css.map": "/EniuK/task/tree/main/my-app/public/static/css/main.0fa6aeea.css.map",
+    "main.c51987e5.js.map": "/EniuK/task/tree/main/my-app/public/static/js/main.c51987e5.js.map",
+    "787.d4aba7ab.chunk.js.map": "/EniuK/task/tree/main/my-app/public/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.0fa6aeea.css",
-    "static/js/main.9b7b4aa9.js"
+    "static/js/main.c51987e5.js"
   ]
 }
