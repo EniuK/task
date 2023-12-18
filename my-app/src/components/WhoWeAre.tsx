@@ -42,7 +42,7 @@ const WhoWeAre = () => {
         }}
       >
         <img
-          src="./headerimage.png"
+          src="./public/headerimage.png"
           alt="Header_Image"
           style={{
             width: isSmallScreen ? "40%" : "100%",

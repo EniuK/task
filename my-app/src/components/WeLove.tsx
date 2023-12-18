@@ -63,7 +63,7 @@ const WeLove: React.FC = () => {
       </Box>
       {isTablet && (
         <Box style={{ position: "absolute", right: "15%" }}>
-          <img src="./questionmark.svg" alt="questionmark" />
+          <img src="./public/questionmark.svg" alt="questionmark" />
         </Box>
       )}
     </Box>

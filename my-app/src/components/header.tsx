@@ -11,7 +11,7 @@ const Header = () => {
           marginRight: { xs: "10px", md: "20px", sm: "10px" },
         }}
       >
-        <img src="./logo.svg" alt="Logo" />
+        <img src="./public/logo.svg" alt="Logo" />
       </Box>
       <Box
         sx={{

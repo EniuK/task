@@ -9,7 +9,7 @@ const Solving = () => {
       {isSmallScreen && (
         <Box>
           <img
-            src="./Thumb.png"
+            src="./public/Thumb.png"
             alt="thumb"
             style={{ transform: "scaleX(-1)" }}
           />
@@ -22,7 +22,7 @@ const Solving = () => {
       </Box>
       {isSmallScreen && (
         <Box>
-          <img src="./Thumb.png" alt="thumb" />
+          <img src="./public/Thumb.png" alt="thumb" />
         </Box>
       )}
     </Box>

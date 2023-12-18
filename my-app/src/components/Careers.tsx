@@ -8,7 +8,7 @@ const Careers = () => {
     <Box className={"careers-wrapper"}>
       {isSmallScreen && (
         <Box className={"image-wrapper"}>
-          <img src="./hiringLeft.png" alt="human_with_hat_image" />
+          <img src="./public/hiringLeft.png" alt="human_with_hat_image" />
         </Box>
       )}
 
@@ -34,7 +34,7 @@ const Careers = () => {
       </Box>
       {isSmallScreen && (
         <Box className={"image-wrapper"}>
-          <img src="./hiringRight.png" alt="human_with_telescope" />
+          <img src="./public/hiringRight.png" alt="human_with_telescope" />
         </Box>
       )}
     </Box>

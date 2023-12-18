@@ -10,20 +10,20 @@ const SolvingProblems = () => {
         <Box
           style={{ position: "absolute", right: "5%", marginBottom: "50px" }}
         >
-          <img src="./personalAssistan.png" alt="help" />
+          <img src="./public/personalAssistan.png" alt="help" />
         </Box>
       )}
 
       <Box>
         <img
-          src="./Thumb.png"
+          src="./public/Thumb.png"
           alt="thumb"
           style={{ transform: "scaleX(-1)" }}
         />
       </Box>
       <Box className={"text-solving"}>We love solving problems!</Box>
       <Box>
-        <img src="./Thumb.png" alt="thumb" />
+        <img src="./public/Thumb.png" alt="thumb" />
       </Box>
     </Box>
   );

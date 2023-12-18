@@ -24,7 +24,7 @@ const Footer: React.FC = () => {
           textAlign: "center",
         }}
       >
-        <img src="logo.svg" alt="Logo" />
+        <img src="./public/logo.svg" alt="Logo" />
         <Typography variant="body1">© 2020 Startupz. </Typography>
         <Typography variant="body1">All rights reserved. </Typography>
       </Box>
@@ -117,9 +117,9 @@ const Footer: React.FC = () => {
             alignItems: { xs: "center", md: "flex-start", sm: "center" },
           }}
         >
-          <img src="twitter.svg" alt="Image1" className={"icon"} />
-          <img src="linkedin.svg" alt="Image2" className={"icon"} />
-          <img src="instagram.svg" alt="Image3" className={"icon"} />
+          <img src="./public/twitter.svg" alt="Image1" className={"icon"} />
+          <img src="./public/linkedin.svg" alt="Image2" className={"icon"} />
+          <img src="./public/instagram.svg" alt="Image3" className={"icon"} />
         </Box>
       </Box>
     </Box>

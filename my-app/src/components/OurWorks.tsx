@@ -15,25 +15,25 @@ const OurWorks: React.FC = () => {
     {
       maintext: "Tolq",
       text: "Tolq is the translation solution built for e-commerce. It provides all pieces of the localization puzzle in one single integrated solution.",
-      img: "./firstLaptop.png",
+      img: "./public/firstLaptop.png",
       color: "#A9BC87",
     },
     {
       maintext: "Feedback Labs",
       text: "Feedback Labs turns feedback into actionable insights for your team.",
-      img: "./secondLaptop.png",
+      img: "./public/secondLaptop.png",
       color: "#8BB5C9",
     },
     {
       maintext: "Codekeeper",
       text: "Codekeeper is an all-in-one solution for software developers and publishers to provide source code escrow as part of service level and license agreements.",
-      img: "./thirdLaptop.png",
+      img: "./public/thirdLaptop.png",
       color: "#00A0B6",
     },
     {
       maintext: "LegalSite",
       text: "Protected against legal risks, privacy compliant and always up-to-date with the latest regulatory developments.",
-      img: "./fourthLaptop.png",
+      img: "./public/fourthLaptop.png",
       color: "#8B60D3",
     },
   ];

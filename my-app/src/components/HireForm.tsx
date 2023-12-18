@@ -91,7 +91,7 @@ const HireForm = () => {
         </Box>
         {isSmallScreen && (
           <Box className={"img-form-container"}>
-            <img src="./rocket.png" alt="rocket" />
+            <img src="./public/rocket.png" alt="rocket" />
           </Box>
         )}
       </Box>

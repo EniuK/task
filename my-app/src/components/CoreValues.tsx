@@ -20,7 +20,7 @@ const Corevalues: React.FC = () => {
   return (
     <Box className={"core-values-wrapper"}>
       <Box style={{ position: "absolute", right: "100px" }}>
-        <img src="lightbulb.svg" alt="lightbulb" />
+        <img src="./public/lightbulb.svg" alt="lightbulb" />
       </Box>
       <Box className={"core-title"}>Our core values</Box>
       <Box className={"core-map-wrapper"}>
