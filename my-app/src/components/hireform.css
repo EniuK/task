@@ -1,24 +1,136 @@
 .form-wrapper {
-    background-color: #FFC351;
+    background-color: #ffc351;
+    padding-left: 100px;
+    box-shadow: 0px 4px 8px #bba98e26;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   
-}
-
-
-
-.form-header-text{
-    color: #FFFFFF;
+  .header-text-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-left: 50px;
+  }
+  
+  .form-header-text {
+    color: #ffffff;
     font-weight: 700;
     font-size: 60px;
     line-height: 55px;
     letter-spacing: -2%;
-    font-family:"Circular Std";
-}
-
-.form-header-subtext {
+    font-family: "Circular Std";
+  }
+  
+  .form-header-subtext {
     margin-top: 20px;
     font-weight: 500;
     font-size: 24px;
     line-height: 24px;
     letter-spacing: -1%;
-    color: #FFFFFF;
-}
+    color: #ffffff;
+  }
+  
+  .form-content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+   width: 100%;
+    max-height: 1000px;
+  }
+  
+  .contact-form {
+    background-color: #f3f3f3;
+    box-shadow: 0px 4px 8px #bba98e26;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 40px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    padding-bottom: 150px;
+  }
+  
+  .button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+  }
+  
+  .submit-button {
+    background-color: #3d4f5c;
+    color: white;
+    border-radius: 32.5px;
+    padding: 10px 20px;
+  }
+  
+  .img-form-container{
+ height: 900px;
+ display: flex;
+ justify-content: flex-end;
+ align-items: flex-end;
+  }
+
+  .form-wrapper-smallest{
+    width: 40%;
+    max-height: 900px;
+  }
+
+  @media (max-width: 900px) {
+    .form-wrapper {
+       
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 90%;
+        padding: 0;
+ 
+        margin: 0;
+      }
+      .header-text-wrapper {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+       
+      }
+      .form-header-text {
+ display: flex;
+ justify-content: center;
+ align-items: center;
+margin-top: 20px;
+        font-size: 30px;
+        line-height: 20px;
+  text-align: center;
+  width: 100%;
+
+      }
+      .form-header-subtext {
+       
+        
+       
+text-align: center;
+        letter-spacing: -1%;
+
+      }
+      
+
+      .form-wrapper-smallest{
+        width: 100%;
+        padding: 0 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .contact-form {
+        width: 100%;
+        margin-left: 60px;
+        padding: 20px;
+      }
+    }

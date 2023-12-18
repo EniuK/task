@@ -42,8 +42,18 @@
     .work-item {
       width: calc(50% - 20px); 
     }
+    
   }
-
+  @media (max-width: 900px) {
+    .work-item {
+    width: 100%;
+    margin: 20px ;
+    }
+    .down-text {
+      text-align: center;
+     max-width: 370px;
+    }
+  }
   .maintext {
     font-family: "Circular Std";
     font-weight: 700;

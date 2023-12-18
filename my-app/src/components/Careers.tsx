@@ -1,12 +1,17 @@
-import { Box } from "@mui/material";
+import { Box, useMediaQuery } from "@mui/material";
 import CustomButton from "./Button";
 import "./careers.css";
 const Careers = () => {
+  const isSmallScreen = useMediaQuery("(min-width: 900px)");
+
   return (
     <Box className={"careers-wrapper"}>
-      <Box className={"image-wrapper"}>
-        <img src="./hiringLeft.png" alt="human_with_hat_image" />
-      </Box>
+      {isSmallScreen && (
+        <Box className={"image-wrapper"}>
+          <img src="./hiringLeft.png" alt="human_with_hat_image" />
+        </Box>
+      )}
+
       <Box className={"text-wrapper"}>
         <Box className={"hiring-header-text"}>We are hiring!</Box>
         <Box className={"hiring-second-text"}>
@@ -27,9 +32,11 @@ const Careers = () => {
           <CustomButton text="See current openings " filling={true} />
         </Box>
       </Box>
-      <Box className={"image-wrapper"}>
-        <img src="./hiringRight.png" alt="human_with_telescope" />
-      </Box>
+      {isSmallScreen && (
+        <Box className={"image-wrapper"}>
+          <img src="./hiringRight.png" alt="human_with_telescope" />
+        </Box>
+      )}
     </Box>
   );
 };

@@ -11,10 +11,10 @@ const WhoWeAre = () => {
       <Box
         className={"text-container"}
         sx={{
-          textAlign: { xs: "center", md: "left" },
-          maxWidth: { xs: "100%", md: "50%" },
-          order: { xs: 2, md: 1 },
-          marginBottom: { xs: "20px", md: "0" },
+          textAlign: { xs: "center", md: "left", sm: "center" },
+          maxWidth: { xs: "100%", md: "50%", sm: "100%" },
+          order: { xs: 2, md: 1, sm: 2 },
+          marginBottom: { xs: "20px", md: "0", sm: "20px" },
         }}
       >
         <Box className={"main"}>
@@ -32,12 +32,12 @@ const WhoWeAre = () => {
         className={"image-container"}
         sx={{
           maxWidth: "100%",
-          order: { xs: 1, md: 2 },
-          margin: { xs: "0", md: "0" },
+          order: { xs: 1, md: 2, sm: 1 },
+          margin: { xs: "0", md: "0", sm: "0" },
           display: "flex",
           flexDirection: "column",
-          alignItems: { md: "flex-end", xs: "center" },
-          justifyContent: { md: "flex-end", xs: "center" },
+          alignItems: { md: "flex-end", xs: "center", sm: "center" },
+          justifyContent: { md: "flex-end", xs: "center", sm: "center" },
           height: "100%",
         }}
       >

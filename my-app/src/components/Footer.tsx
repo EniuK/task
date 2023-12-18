@@ -19,7 +19,7 @@ const Footer: React.FC = () => {
     >
       <Box
         sx={{
-          width: { xs: "100%", md: "auto" },
+          width: { xs: "100%", md: "auto", sm: "100%" },
           margin: "auto",
           textAlign: "center",
         }}
@@ -31,20 +31,23 @@ const Footer: React.FC = () => {
 
       <Box
         sx={{
-          width: { xs: "100%", md: "auto" },
+          width: { xs: "100%", md: "auto", sm: "100%" },
           margin: "auto",
           textAlign: "center",
         }}
       >
-        <Typography variant="h5" sx={{ display: { xs: "block", md: "block" } }}>
+        <Typography
+          variant="h5"
+          sx={{ display: { xs: "block", md: "block", sm: "block" } }}
+        >
           Companies
         </Typography>
         <Box
           sx={{
             display: "flex",
-            flexDirection: { xs: "row", md: "column" },
-            justifyContent: { xs: "center", md: "flex-start" },
-            alignItems: { xs: "center", md: "flex-start" },
+            flexDirection: { xs: "row", sm: "row", md: "column" },
+            justifyContent: { xs: "center", sm: "center", md: "flex-start" },
+            alignItems: { xs: "center", sm: "center", md: "flex-start" },
             marginTop: "10px",
           }}
         >
@@ -53,41 +56,41 @@ const Footer: React.FC = () => {
             className="links-companies"
             style={{ textDecoration: "none", marginTop: "10px" }}
           >
-            Tolq
+            Tolq &nbsp;
           </Link>
           <Link
             href="#"
             className="links-companies"
             style={{ textDecoration: "none", marginTop: "10px" }}
           >
-            LegalSite
+            LegalSite &nbsp;
           </Link>
           <Link
             href="#"
             className="links-companies"
             style={{ textDecoration: "none", marginTop: "10px" }}
           >
-            Codekeeper
+            Codekeeper &nbsp;
           </Link>
           <Link
             href="#"
             className="links-companies"
             style={{ textDecoration: "none", marginTop: "10px" }}
           >
-            Feedback Labs
+            Feedback Labs &nbsp;
           </Link>
         </Box>
       </Box>
       <Box
         sx={{
-          width: { xs: "100%", md: "auto" },
+          width: { xs: "100%", md: "auto", sm: "100%" },
           margin: "auto",
-          textAlign: { xs: "center", md: "left" },
+          textAlign: { xs: "center", md: "left", sm: "center" },
         }}
       >
         <Typography variant="h6">Contact</Typography>
         <Box>
-          <Box>
+          <Box sx={{ padding: { xs: "30px", sm: "30px" } }}>
             World Trade Center - The Hague Prinses Margrietplantsoen 33 2595 AM
             The Hague The Netherlands
           </Box>
@@ -101,7 +104,7 @@ const Footer: React.FC = () => {
 
       <Box
         sx={{
-          width: { xs: "100%", md: "auto" },
+          width: { xs: "100%", md: "auto", sm: "100%" },
           margin: "auto",
           textAlign: "center",
         }}
@@ -111,7 +114,7 @@ const Footer: React.FC = () => {
           sx={{
             display: "flex",
             flexDirection: "column",
-            alignItems: { xs: "center", md: "flex-start" },
+            alignItems: { xs: "center", md: "flex-start", sm: "center" },
           }}
         >
           <img src="twitter.svg" alt="Image1" className={"icon"} />

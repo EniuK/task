@@ -1,5 +1,5 @@
 import React from "react";
-import { Box, TextField, Button } from "@mui/material";
+import { Box, TextField, Button, useMediaQuery } from "@mui/material";
 import * as yup from "yup";
 import { useFormik } from "formik";
 import "./hireform.css";
@@ -11,6 +11,8 @@ const validationSchema = yup.object({
 });
 
 const HireForm = () => {
+  const isSmallScreen = useMediaQuery("(min-width: 900px)");
+
   const formik = useFormik({
     initialValues: {
       name: "",
@@ -23,69 +25,19 @@ const HireForm = () => {
     },
   });
 
-  const formWrapperStyles = {
-    paddingLeft: "100px",
-    boxShadow: "0px 4px 8px #BBA98E26",
-    display: "flex",
-    flexDirection: "column",
-    alignItems: "center",
-  };
-
-  const contactFormStyles = {
-    backgroundColor: "#F3F3F3",
-    boxShadow: "0px 4px 8px #BBA98E26",
-    borderRadius: "10px",
-    display: "flex",
-    flexDirection: "column",
-    justifyContent: "space-between",
-    alignItems: "center",
-    height: "80vh",
-    width: "40%",
-    padding: "40px",
-    marginBottom: "50px",
-    marginTop: "50px",
-    paddingBottom: "150px",
-  };
-
-  const imageStyles = {
-    width: "50%",
-    marginTop: "auto",
-  };
-
   return (
-    <Box sx={formWrapperStyles} className={"form-wrapper"}>
-      <Box
-        style={{
-          display: "flex",
-          justifyContent: "flex-start",
-          alignItems: "flex-start",
-          flexDirection: "column",
-          width: "100%",
-          paddingLeft: "100px",
-        }}
-      >
-        <Box className={"form-header-text"}>
-          Are you ready <br /> to board this rocket ship?
+    <Box className="form-wrapper">
+      <Box className="header-text-wrapper">
+        <Box className="form-header-text">
+          Are you ready to board this rocket ship?
         </Box>
-        <Box className={"form-header-subtext"}>
+        <Box className="form-header-subtext">
           Share your excitement with us.
         </Box>
       </Box>
-      <Box
-        style={{
-          display: "flex",
-          flexDirection: "row",
-          justifyContent: "center",
-          alignItems: "flex-start", // Ustawione, aby elementy były na górze kontenera
-          maxWidth: "1280px",
-          height: "100%",
-        }}
-      >
-        <Box sx={contactFormStyles} className={"contact-form"}>
-          <form
-            onSubmit={formik.handleSubmit}
-            style={{ height: "100%", maxWidth: "512px", width: "100%" }}
-          >
+      <Box className="form-content-wrapper">
+        <Box className={"form-wrapper-smallest"}>
+          <form onSubmit={formik.handleSubmit} className="contact-form">
             <TextField
               id="name"
               label="Name"
@@ -114,39 +66,34 @@ const HireForm = () => {
               variant="outlined"
               fullWidth
               multiline
-              rows={15}
+              rows={12}
               margin="normal"
               {...formik.getFieldProps("message")}
               error={formik.touched.message && Boolean(formik.errors.message)}
               helperText={formik.touched.message && formik.errors.message}
             />
-            <Box
-              style={{
-                width: "100%",
-                display: "flex",
-                justifyContent: "center",
-                alignItems: "center",
-                marginTop: "30px",
-              }}
-            >
+            <Box className="button-wrapper">
               <Button
                 type="submit"
-                style={{
+                className="submit-button"
+                sx={{
                   backgroundColor: "#3D4F5C",
-                  color: "white",
                   borderRadius: "32.5px",
-                  padding: "10px 20px",
+                  color: "white",
+                  padding: "15px 20px",
+                  textTransform: "none",
                 }}
               >
-                Shoot us a message
+                <b>Shoot us a message</b>
               </Button>
             </Box>
           </form>
         </Box>
-
-        <Box style={imageStyles}>
-          <img src="./rocket.png" alt="rocket" />
-        </Box>
+        {isSmallScreen && (
+          <Box className={"img-form-container"}>
+            <img src="./rocket.png" alt="rocket" />
+          </Box>
+        )}
       </Box>
     </Box>
   );

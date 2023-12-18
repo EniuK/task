@@ -34,3 +34,15 @@
     color:#FB8958;
     padding: 20px 0;
 }
+@media (max-width: 900px) {
+    .careers-wrapper {
+        justify-content: center;
+        width: 100%;
+        padding-bottom: 100px;
+        padding-right: 0;
+    }
+    
+    .text-wrapper {
+width: 40%;
+    }
+  }

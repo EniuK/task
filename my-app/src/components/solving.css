@@ -17,3 +17,11 @@
     width: 65%;
     text-align: center;
 }
+
+@media (max-width: 900px) {
+.solving-text{
+  font-size: 20px;
+  line-height: 25px;
+  width: 20%;
+}
+}

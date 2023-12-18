@@ -2,7 +2,7 @@ import { Box, useMediaQuery } from "@mui/material";
 import "./solvingproblems.css";
 
 const SolvingProblems = () => {
-  const isSmallScreen = useMediaQuery("(min-width: 600px)");
+  const isSmallScreen = useMediaQuery("(min-width: 900px)");
 
   return (
     <Box className={"problems-wrapper"}>

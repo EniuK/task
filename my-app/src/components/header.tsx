@@ -8,8 +8,8 @@ const Header = () => {
     <Box className={"header-wrapper"}>
       <Box
         sx={{
-          marginLeft: { xs: "10px", md: "100px" },
-          marginRight: { xs: "10px", md: "20px" },
+          marginLeft: { xs: "10px", md: "100px", sm: "10px" },
+          marginRight: { xs: "10px", md: "20px", sm: "10px" },
         }}
       >
         <img src="./logo.svg" alt="Logo" />
@@ -17,17 +17,17 @@ const Header = () => {
       <Box
         sx={{
           display: "flex",
-          flexDirection: { xs: "column", md: "row" },
-          alignItems: { xs: "center", md: "flex-end" },
-          marginTop: { xs: "20px", md: "0" },
+          flexDirection: { xs: "column", md: "row", sm: "column" },
+          alignItems: { xs: "center", md: "flex-end", sm: "center" },
+          marginTop: { xs: "20px", md: "0", sm: "20px" },
           height: "100%",
-          paddingRight: { xs: 0, md: "50px" },
+          paddingRight: { xs: 0, md: "50px", sm: 0 },
         }}
       >
         <Box
           className={"link"}
           sx={{
-            marginBottom: { xs: "10px", md: "10px" }, // Dodano margines tylko na małych ekranach
+            marginBottom: { xs: "10px", md: "10px", sm: "10px" },
           }}
         >
           Startups
@@ -35,7 +35,7 @@ const Header = () => {
         <Box
           className={"link"}
           sx={{
-            marginBottom: { xs: "10px", md: "10px" }, // Dodano margines tylko na małych ekranach
+            marginBottom: { xs: "10px", md: "10px", sm: "10px" },
           }}
         >
           Contact
